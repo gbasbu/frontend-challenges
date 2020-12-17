@@ -1,0 +1,106 @@
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+
+$Dark-gray: hsl(0, 0%, 59%);
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: $Dark-cyan;
+    height: 100vh;
+    overflow: hidden;
+}
+main{
+    max-width: 1440px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    .svg-top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: -350px;
+        margin-top: -550px;
+        @media (max-width: 375px) {
+            margin: 0;
+            margin-left: -700px;
+            margin-top: -700px;
+        }
+    }
+    .svg-bottom{
+        position: absolute;
+        right: 0;
+        margin-right: -300px;
+        margin-top: 300px;
+        @media (max-width: 375px) {
+            margin: 0;
+            margin-right: -800px;
+            margin-top: 150px;
+        }
+    }
+    article {
+        width: 350px;
+        height: 400px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: 50%;
+        margin-top: 100px;
+        transform: translate(-50%);
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0px 10px 20px rgba($Very-dark-desaturated-blue,0.4);
+        .row-1{
+            img{
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            
+        }
+        .row-2{
+            img{
+                border: 5px solid white;
+                border-radius: 100%;
+                margin-top: -55px;
+            }
+        }
+        .row-3{
+            padding-top: 20px;
+            .title{
+                font-weight: 700;
+                color: $Very-dark-desaturated-blue;
+            }
+            span{
+                font-weight: 400;
+                color: $Dark-grayish-blue;
+                padding-left: 5px;
+            }
+            p{
+                color: $Dark-grayish-blue;
+            }
+        }
+        .row-4{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            border-top: 1px solid lightgray;
+            padding-top: 30px;
+            span{
+                font-weight: 700;
+                color: $Very-dark-desaturated-blue;
+                p{
+                    color: $Dark-grayish-blue;
+                    font-weight: 200;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    
+}
+
