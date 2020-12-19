@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Article preview component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -67,20 +67,6 @@
       Coded by <a href="https://www.frontendmentor.io/profile/gbasbu">Gorkem Basbug</a>.
     </div>
   </main>
-  <script>
-    function share() {
-      const share = document.getElementById('share')
-      const links = document.getElementById('links')
-      if(links.style.display == 'none'){
-        links.style.display = 'block'
-        share.classList.remove('icon-span-before')
-        share.classList.add('icon-span-after')
-      }else{
-        links.style.display = 'none'
-        share.classList.remove('icon-span-after')
-        share.classList.add('icon-span-before')
-      }
-    }
-  </script>
 </body>
+<script src="./js/script.js"></script>
 </html>
